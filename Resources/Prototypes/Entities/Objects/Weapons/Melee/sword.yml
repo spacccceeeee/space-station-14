@@ -22,6 +22,28 @@
     qualities:
     - Slicing
 
+- type: entity
+  name: courier blade
+  parent: BaseSword
+  id: CourierBlade
+  description: Small, but dashing.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/energykatana.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 0.5
+    angle: 60
+  - type: CustomStun
+    countToStun: 3
+    knockdownTime: 3f
+    stunTime: 3f
+  - type: Item
+    size: Small
+
 #Shortswords
 - type: entity
   name: cutlass
